@@ -1,8 +1,7 @@
 a = list(str(input()))
 b = list(str(input()))
 
-if len(a) != len(b):
-    print("No")
+
 
 a.sort()
 b.sort()
@@ -17,5 +16,7 @@ for i in range(len(a)):
 
 if result == True:
     print("Yes")
+    if len(a) != len(b):
+        print("No")
 else:
     print("No")

@@ -1,8 +1,7 @@
 n,k = map(int,input().split())
 
 lst = list(map(int,input().split()) )
+lst.sort()
 for i in range(len(lst)):
-    if k > len(lst):
-        break
-    if i ==  k:
+    if i == k-1:
         print(lst[i])

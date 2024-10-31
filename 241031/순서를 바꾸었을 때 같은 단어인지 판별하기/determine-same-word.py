@@ -6,6 +6,8 @@ b = list(str(input()))
 a.sort()
 b.sort()
 result = True 
+if len(a) != len(b):
+    result = False
 for i in range(len(a)):
     if a[i]==b[i]:
         pass
@@ -16,7 +18,5 @@ for i in range(len(a)):
 
 if result == True:
     print("Yes")
-    if len(a) != len(b):
-        print("No")
 else:
     print("No")

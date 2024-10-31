@@ -6,9 +6,10 @@ b = list(str(input()))
 a.sort()
 b.sort()
 result = True 
-if len(a) != len(b):
-    result = False
 for i in range(len(a)):
+    if len(a) != len(b):
+        result = False
+        break
     if a[i]==b[i]:
         pass
     else:

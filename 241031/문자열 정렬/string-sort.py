@@ -1,0 +1,5 @@
+sentence = (str(input()))
+sentence = list(sentence)
+sentence.sort()
+result = "".join(sentence)
+print(result)

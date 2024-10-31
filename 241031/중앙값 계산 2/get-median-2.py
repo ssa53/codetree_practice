@@ -6,4 +6,4 @@ for i in range(n):
     lst.append(a)
     lst.sort()
     if (i+1)%2 != 0:
-        print(lst[len(lst)//2])
+        print(lst[len(lst)//2],end=" ")

@@ -1,10 +1,9 @@
 num_of_days = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 def get_day(month,day):
     sum=0
-    comp = 0
-    while comp != month - 1:
-        sum += num_of_days[comp]
-        comp +=1
+    for i in range(12):
+        if month-1 != i:
+            sum+= num_of_days[i]
     sum += day
     return sum 
 lst = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]

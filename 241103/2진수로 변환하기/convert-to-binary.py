@@ -1,6 +1,6 @@
 n= int(input())
 digits=[]
-whlie True:
+while True:
     if n<2:
         digits.append(n)
         break

@@ -1,10 +1,8 @@
 n,b=map(int,input().split())
 
 result = []
-if n < b:
-    result.append(n)
     
-while n >= b:
+while True:
     if n < b:
         result.append(n)
         break

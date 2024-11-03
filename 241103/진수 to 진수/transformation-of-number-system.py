@@ -5,7 +5,7 @@ for i in range(len(n)):
     lst.append(int(lst[i]))
 sum=0
 for i in range(len(n)):
-    sum += lst[i]*pow(a,len(n)-1-i):
+    sum += lst[i]*pow(a,len(n)-1-i)
 result=[]
 while True:
     if sum<b:

@@ -20,4 +20,4 @@ result = result_day // 7
 if result_day % 7  <= lst.index(a)+1:
     result +=1 
 
-print(lst.index(a))
+print(result)

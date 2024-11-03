@@ -8,14 +8,14 @@ for i in range(n):
     distance = int(distance)
     if direction == "L":
         left = start - distance
-		right = start
-		start = start - distance
-		segment.append([left,right])
-	else:
-		left = start 
-		right = start + distance
-		start = start + distance
-		segment.append([left,right])
+        right = start
+        start = start - distance
+        segment.append([left,right])
+    else:
+        left = start
+        right = start + distance
+        start = start + distance
+        segment.append([left,right])
 checked = [[0,"color"]] * (MAX+1)
 for x,y in segment:
 	x,y = x+OFFSET,y+OFFSET
@@ -29,9 +29,9 @@ for x,y in segment:
 			checked[i][1] = "white"
 white = 0
 gray = 0
-black = 0	
+black = 0
 for i in checked:
-	if i//1000 >= 2 and i%1000 >= 2:
+	if i[0]//1000 >= 2 and i[0]%1000 >= 2:
 		gray += 1
 	else: 
 		if i[1] == "black":

@@ -11,9 +11,9 @@ for i in range(n):
             lst[j] += 1
             start = start+num 
     elif direct == "L":
-        for j in range(start+num,start-1,-1):
+        for j in range(start,start-num,-1):
             lst[j] += 1 
-            start = start+num
+            start = start-num
 sum = 0 
 for j in range(len(lst)):
     if lst[j] == max(lst):

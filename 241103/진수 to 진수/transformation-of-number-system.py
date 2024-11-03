@@ -2,7 +2,7 @@ a,b = map(int,input().split())
 n = str(input())
 lst = []
 for i in range(len(n)):
-    lst.append(int(lst[i]))
+    lst.append(int(n[i]))
 sum=0
 for i in range(len(n)):
     sum += lst[i]*pow(a,len(n)-1-i)

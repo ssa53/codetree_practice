@@ -4,8 +4,8 @@ lst = []
 for i in range(len(n)):
     lst.append(int(n[i]))
 sum=0
-for i in range(len(n)):
-    sum += lst[i]*pow(a,len(n)-1-i)
+for i in range(len(lst)):
+    sum += lst[i]*pow(a,len(lst)-1-i)
 result=[]
 while True:
     if sum<b:

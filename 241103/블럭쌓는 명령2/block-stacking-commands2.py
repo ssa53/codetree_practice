@@ -6,7 +6,7 @@ lst = [
 
 for i in range(k):
     a,b = map(int,input().split())
-    for j in range(a,b+1):
+    for j in range(a,b):
         lst[j] +=1
 
 max= 0

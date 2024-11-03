@@ -4,6 +4,7 @@ result = []
 while n >= b:
     if n < b:
         result.append(n)
+        break
         
     result.append(n%b)
     n//=b

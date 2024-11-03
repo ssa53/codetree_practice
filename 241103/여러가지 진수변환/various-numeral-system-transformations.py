@@ -1,6 +1,9 @@
 n,b=map(int,input().split())
 
 result = []
+if n < b:
+    result.append(n)
+    
 while n >= b:
     if n < b:
         result.append(n)

@@ -21,7 +21,7 @@ for i in range(n):
 	else:
 		while dist>0:
 			lst[cur] = 2
-			cnt_black += 1
+			cnt_black[cur] += 1
 			dist -= 1
 			
 			if dist:

@@ -1,7 +1,7 @@
 n,k=map(int,input().split())
 
 lst = [
-    0 for i in range(n)
+    0 for i in range(n+1)
 ]
 
 for i in range(k):

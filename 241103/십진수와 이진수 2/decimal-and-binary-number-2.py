@@ -1,7 +1,7 @@
 n = str(input())
 lst = []
 for i in range(len(n)):
-    lst.append(n[i])
+    lst.append(int(n[i]))
 sum = 0
 for i in range(len(lst)):
     sum += lst[i]*pow(2,len(lst)-1-i) 

@@ -13,7 +13,7 @@ result = []
     
 while True:
     if sum < 2:
-        result.append(n)
+        result.append(sum)
         break
         
     result.append(sum%2)

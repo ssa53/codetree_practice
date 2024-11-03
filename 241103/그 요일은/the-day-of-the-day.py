@@ -17,7 +17,5 @@ result_day = get_day(m2,d2)-get_day(m1,d2)
 result = result_day // 7 
 
 
-if result_day % 7  !=0 and result_day % 7 >= lst.index(a)+1:
-    result +1
-
-print(result)
+if a in lst[0:result_day%7+1]:
+    result+=1

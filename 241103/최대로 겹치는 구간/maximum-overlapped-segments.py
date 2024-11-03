@@ -1,6 +1,6 @@
 n = int(input())
 lst = [
-    0 for i in range(200)
+    0 for i in range(201)
 ]
 for i in range(n):
     a,b=map(int,input().split())

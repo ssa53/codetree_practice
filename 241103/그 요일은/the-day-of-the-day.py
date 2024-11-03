@@ -14,10 +14,10 @@ def get_day(month,day):
 
 result_day = get_day(m2,d2)-get_day(m1,d2)
 
-result = result_day // 7 
+result = result_day // 7 + 1 
 
 
 if result_day % 7  <= lst.index(a)+1:
-    result +=1 
+    result - 1
 
 print(result)

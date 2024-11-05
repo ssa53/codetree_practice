@@ -8,5 +8,5 @@ for i in range(n):
     idx = int(input())
     lst_student[idx] += 1 
     for j in range(len(lst)):
-        if lst[j] == m:
+        if lst_student[j] == m:
             print(j)

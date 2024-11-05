@@ -5,18 +5,13 @@ cnt_lst = []
 for i in range(n):
     num = int(input())
     lst.append(num)
-cnt = 1
+ans,cnt = 0,0
 for i in range(n):
-    if i == 0 :
-        pass
-    elif lst[i] == lst[i-1] :
+    if i>=1 and lst[i] == lst[i-1]:
         cnt +=1 
-    elif lst[i] != lst[i-1 ] : 
-        cnt_lst.append(cnt)
+    else:
         cnt = 1 
-    elif i == n-1 and lst[i]==lst[i-1]:
-        cnt_lst.append(cnt)
-if cnt_lst ==[]:
-    print(1)
-else:
-    print(max(cnt_lst))
+
+    ans = max(ans,cnt)
+
+print(ans)

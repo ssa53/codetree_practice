@@ -28,6 +28,8 @@ for i in range(MAX+1):
         if checked[i][j]==1:
             garo_lst.append(i-OFFSET)
             sero_lst.append(j-OFFSET)
+if garo_lst == [] or sero_lst == [] :
+    print(0)
 garo = max(garo_lst)-min(garo_lst)+1
 sero = max(sero_lst)-min(sero_lst)+1
 print(sero * garo)

@@ -14,7 +14,7 @@ for i in range(n):
     elif lst[i] != lst[i-1 ] : 
         cnt_lst.append(cnt)
         cnt = 1 
-    elif lst[i] == lst[i-1] and i == n-1:
+    elif i == n-1 and lst[i]==lst[i-1]:
         cnt_lst.append(cnt)
 if cnt_lst ==[]:
     print(1)

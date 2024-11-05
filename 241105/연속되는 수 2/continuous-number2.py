@@ -14,4 +14,7 @@ for i in range(n):
     elif lst[i] != lst[i-1 ] : 
         cnt_lst.append(cnt)
         cnt = 1 
-print(max(cnt_lst))
+if cnt_lst ==[]:
+    print(1)
+else:
+    print(max(cnt_lst))

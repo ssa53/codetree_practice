@@ -30,6 +30,7 @@ for i in range(MAX+1):
             sero_lst.append(j-OFFSET)
 if garo_lst == [] or sero_lst == [] :
     print(0)
-garo = max(garo_lst)-min(garo_lst)+1
-sero = max(sero_lst)-min(sero_lst)+1
-print(sero * garo)
+else:
+    garo = max(garo_lst)-min(garo_lst)+1
+    sero = max(sero_lst)-min(sero_lst)+1
+    print(sero * garo)

@@ -12,4 +12,4 @@ def make_same(lst,avg):
         sum += lst[i] - avg 
     return int(sum)
     
-print(make_sum(lst,avg))
+print(make_same(lst,avg))

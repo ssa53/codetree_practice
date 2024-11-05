@@ -7,6 +7,6 @@ lst_student = [
 for i in range(n):
     idx = int(input())
     lst_student[idx] += 1 
-    for j in range(len(lst)):
+    for j in range(len(lst_student)):
         if lst_student[j] == m:
             print(j)

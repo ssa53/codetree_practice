@@ -1,7 +1,7 @@
 n = int(input())
 lst = [
     int(input())
-    for i in range(n):
+    for i in range(n)
 ]
 #부호 (lst[i]<0 or lst[i]>0) 이 같은거중에 길이(cnt)가 제일 큰거..
 ans,cnt =0, 0

@@ -26,6 +26,12 @@ for i in range(m):
         for j in range(t):
             arr_b[time_b] = arr_b[time_b-1] - 1
             time_b += 1
+for i in range(MAX+1):
+    if arr_a[i] == 0:
+        arr_a[i] = arr_a[time_a]
+    if arr_b[i] == 0:
+        arr_b[i] == arr_b[time_b]
+    
 cnt = 0
 for i in range(1,max(time_b,time_a)+1):
     if arr_a[i] == arr_b[i] :

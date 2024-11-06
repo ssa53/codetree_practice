@@ -33,7 +33,7 @@ elif time_a > time_b:
 	for i in range(time_b, time_a):
 	    arr_b[i] = arr_b[i - 1]
 cnt = 0
-for i in range(1,max(time_b,time_a)+1):
+for i in range(1,max(time_b,time_a)):
     if arr_a[i] == arr_b[i] :
         if arr_a[i-1] != arr_b[i-1]:
             cnt += 1

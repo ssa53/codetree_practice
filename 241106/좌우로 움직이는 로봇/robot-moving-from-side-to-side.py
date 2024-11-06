@@ -28,10 +28,10 @@ for i in range(m):
             time_b += 1
 if time_a < time_b:
 	for i in range(time_a, time_b):
-		pos_a[i] = pos_a[i - 1]
+		arr_a[i] = arr_a[i - 1]
 elif time_a > time_b:
 	for i in range(time_b, time_a):
-		pos_b[i] = pos_b[i - 1]
+	    arr_b[i] = arr_b[i - 1]
 cnt = 0
 for i in range(1,max(time_b,time_a)+1):
     if arr_a[i] == arr_b[i] :

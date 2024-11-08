@@ -1,0 +1,5 @@
+print("score          subject          name")
+print("")
+print("  100             math           sam")
+print("   88          science          paul")
+print("   96         language          jack")

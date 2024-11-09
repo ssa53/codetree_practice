@@ -20,7 +20,7 @@ for shake in shakes:
     target2 = shake.person2
     if infected[target1]:
 	    shake_num[target1] += 1
-	if infected[target2]:
+    if infected[target2]:
 		shake_num[target2] += 1
 	
 	# target1이 감염되어 있고 아직 K번 이하로 악수했다면 target2를 전염시킵니다.

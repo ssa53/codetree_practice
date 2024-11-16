@@ -10,8 +10,7 @@ for i in range(len(lst)):
         if j-i <0 : 
             distance = i-j
         sum += distance * (lst[j]) 
-        if sum < INT_MAX : 
-            INT_MAX = sum 
+
     result.append(sum)
 print(min(result))
 

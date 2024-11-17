@@ -1,7 +1,7 @@
 r,c = map(int,input().split())
 arr = [
     list(map(str,input().split()))
-    for i in range(c)
+    for i in range(r)
 ]
 cnt = 0 
 for i in range(1,r):

@@ -9,7 +9,7 @@ for i in range(n):
     for j in range(n):
         diff = j-i
         if j-i < 0:
-            diff = 5-abs(j-i)
+            diff = n-abs(j-i)
         dist = lst[j]*diff
         sum += dist
     sum_lst.append(sum)

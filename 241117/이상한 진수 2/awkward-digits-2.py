@@ -11,8 +11,7 @@ for i in range(len(lst)):
     lst_copy = lst.copy()
     lst_copy[i] = change01(lst_copy[i]) 
     for j in range(len(lst)):
-        sum += lst_copy[j]*(len(lst)-(j+1))
-        print(sum)
+        sum += lst_copy[j]*pow(2,(len(lst)-(j+1)))
     mx = max(mx,sum)
         
 print(mx)

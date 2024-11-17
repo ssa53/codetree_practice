@@ -3,7 +3,6 @@ lst = [
     int(input()) 
     for i in range(n)
 ]
-print(lst)
 sum_lst = []
 for i in range(n):
     sum = 0

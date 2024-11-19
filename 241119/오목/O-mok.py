@@ -20,7 +20,7 @@ for i in range(19):
             break
         if (arr[i][j]==1 and arr[i+1][j-1]==1 and arr[i+2][j-2]==1 and arr[i+3][j-3]==1 and arr[i+4][j-4]==1):
             win = 1 
-            lst.append([i-2,j-2])
+            lst.append([i+2,j-2])
             break
         if (arr[i][j]==1 and arr[i+1][j]==1 and arr[i+2][j]==1 and arr[i+3][j]==1 and arr[i+4][j]==1):
             win = 1 
@@ -40,7 +40,7 @@ for i in range(19):
             break
         elif (arr[i][j]==2 and arr[i+1][j-1]==2 and arr[i+2][j-2]==2 and arr[i+3][j-3]==2 and arr[i+4][j-4]==2):
             win=2
-            lst.append([i-2,j-2])
+            lst.append([i+2,j-2])
             break
         else:
             pass

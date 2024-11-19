@@ -45,8 +45,11 @@ for i in range(19):
         else:
             pass
 print(win)
-for i in range(len(lst[0])):
-    print(lst[0][i]+1,end=" ")
+if len(lst)==0:
+    pass
+else:
+    for i in range(len(lst[0])):
+        print(lst[0][i]+1,end=" ")
 
     
                     

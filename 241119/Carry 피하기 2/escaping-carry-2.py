@@ -26,6 +26,8 @@ for i in range(n):
     for j in range(i+1,n):
         for k in range(j+1,n):
             result.append(carry(lst[i],lst[j],lst[k]))
+while None in result:
+    result.remove(None)
 print(max(result))
                 
             

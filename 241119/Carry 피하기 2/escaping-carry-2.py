@@ -28,6 +28,9 @@ for i in range(n):
             result.append(carry(lst[i],lst[j],lst[k]))
 while None in result:
     result.remove(None)
-print(max(result))
+if len(result)!= 0:
+    print(max(result))
+else:
+    print(-1)
                 
             

@@ -1,16 +1,11 @@
 n = int(input())
 lst = list(str(input()))
-cnt_c = 0
-cnt_o = 0
-cnt_w = 0
-for i in lst:
-    if i == 'C':
-        cnt_c += 1 
-    elif i == 'O':
-        cnt_o += 1
-    elif i == 'W':
-        cnt_w += 1
-    else:
-        pass
+cnt = 0
+for i in range(n):
+    for j in range(i+1,n):
+        for k in range(j+1,n):
+            if lst[i]=='C' and lst[j]=='O' and lst[k]=='W':
+                cnt += 1 
 
-print(cnt_c*cnt_o*cnt_w)
+print(cnt)
+

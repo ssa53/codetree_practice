@@ -3,6 +3,8 @@ arr = [
     [0]*n
     for i in range(n)
 ]
+dxs = [0, 1,  0, -1]
+dys = [1, 0, -1,  0]
 def count(r,c):
     cnt = 0
     for dx, dy in zip(dxs, dys):

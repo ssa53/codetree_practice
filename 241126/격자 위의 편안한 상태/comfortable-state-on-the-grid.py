@@ -5,7 +5,7 @@ arr = [
 ]
 dxs = [0, 1,  0, -1]
 dys = [1, 0, -1,  0]
-def count(r,c):
+def count(x,y):
     cnt = 0
     for dx, dy in zip(dxs, dys):
         nx, ny = x + dx, y + dy

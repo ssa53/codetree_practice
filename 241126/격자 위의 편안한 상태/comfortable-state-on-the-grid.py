@@ -17,7 +17,7 @@ def in_range(x, y):
 for i in range(m):
     r,c=map(int,input().split())
     arr[r-1][c-1] = 1 
-    if count(arr,r-1,c-1) == 3:
+    if count(r-1,c-1) == 3:
         print(1)
     else:
         print(0)

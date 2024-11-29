@@ -12,6 +12,7 @@ elif m2==m1 :
     result = d2-d1 
 
 cnt = result//7 
-if result % 7 != 0 :
+result /= 7
+if result :
     cnt += 1 
 print(cnt)

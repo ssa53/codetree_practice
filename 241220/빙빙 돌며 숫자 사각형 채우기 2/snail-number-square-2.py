@@ -22,8 +22,8 @@ for i in range(2,n*m+1):
         else:
             dir_num = (dir_num+3)%4
 
-for i in ragne(n):
-    for j in ragne(m):
+for i in range(n):
+    for j in range(m):
         print(arr[i][j],end=' ')
     print()
     

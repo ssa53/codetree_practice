@@ -14,9 +14,13 @@ for i in range(n):
         arr[int(lst[i][0])-1] = 2 
 sum_lst = []
 print(arr)
+if i+k+1 > len(arr):
+    rng = len(arr)
+else:
+    rng = i+k+1
 for i in range(len(arr)-k+1):
     sum = 0
-    for j in range(i,if i+k+1 > len(arr):len(arr) else: i+k+1):
+    for j in range(i,rng):
         sum += arr[j]
     sum_lst.append(sum)
 print(max(sum_lst))

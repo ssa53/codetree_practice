@@ -8,7 +8,7 @@ for i in range(len(lst)-1):
     sum = 0 
     for j in range(i+1,len(lst)):
         sum = lst[i]+lst[j]
-        sum_lst.append(SUM-sum-s)
+        sum_lst.append(abs(SUM-sum-s))
 
 print(min(sum_lst))
         

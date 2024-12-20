@@ -7,6 +7,9 @@ for i in range(len(lst)):
         sum += lst[i]+lst[j]
     sum -= s 
     sum_lst.append(sum)
+for x in sum_lst :
+    if x<0:
+        x = -x
 print(min(sum_lst))
 
         

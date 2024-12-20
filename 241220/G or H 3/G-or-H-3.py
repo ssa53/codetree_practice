@@ -16,7 +16,7 @@ sum_lst = []
 print(arr)
 for i in range(len(arr)-k+1):
     sum = 0
-    for j in range(i,i+k+1):
+    for j in range(i,if i+k+1 > len(arr):len(arr) else: i+k+1):
         sum += arr[j]
     sum_lst.append(sum)
 print(max(sum_lst))

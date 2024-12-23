@@ -1,27 +1,18 @@
+MAX_NUM = 10000
 n,k=map(int,input().split())
-lst = [
-    input().split()
-    for _ in range(n)
-]
-num_lst = []
-for i in range(n):
-    num_lst.append(int(lst[i][0]))
-arr = [0]*max(num_lst)
-for i in range(n):
-    if lst[i][1] == 'G':
-        arr[int(lst[i][0])-1] = 1
-    elif lst[i][1] == 'H':
-        arr[int(lst[i][0])-1] = 2 
-sum_lst = []
+arr=[0]*(MAX_NUM+1)
 
-for i in range(len(arr)-k-1):
-    sum = 0
-    if i+k+1 > len(arr):
-        rng = len(arr)
-    else:
-        rng = i+k+1
-    for j in range(i,rng):
-        sum += arr[j]
-    sum_lst.append(sum)
+for i in range(n):
+    x,c=tuple(input().split())
+    x=int(x)
+    arr[x] = 1 if c == 'G' else 2 
 
-print(max(sum_lst))
+max_sum = 0
+for i in range(MAX_NUM-k+1):
+    sum_interval = 0
+    for j in range(i,i+k+1):
+        sum_interval+= arr[j]
+
+    max_sum = max(max_sum,sum_interval)
+
+print(max_sum)

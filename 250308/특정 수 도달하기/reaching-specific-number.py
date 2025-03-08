@@ -7,5 +7,6 @@ for i in lst:
         sum += i
     if i>= 250:
         break
-print(sum,sum/cnt)
+result = f'{sum/cnt:0.1f}'
+print(sum,result)
         

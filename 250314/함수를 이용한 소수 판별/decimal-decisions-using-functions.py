@@ -7,10 +7,11 @@ def isPRIME(n):
     return True
 
 sum=0
-if a == b :
-    print(0)
 for i in range(a,b+1):
     if isPRIME(i) == True : 
         sum += i 
 
-print(sum)
+if a==b:
+    print(0)
+else:
+    print(sum)

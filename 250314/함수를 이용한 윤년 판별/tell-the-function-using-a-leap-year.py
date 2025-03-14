@@ -8,5 +8,7 @@ def is_yun(y):
         return False 
     return True 
 
-print("true") if is_yun(y):
-else: print("false")
+if is_yun(y) == True : 
+    print("true")
+else:
+    print("false")

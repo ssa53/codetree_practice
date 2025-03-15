@@ -13,4 +13,5 @@ def rev_sol(n):
     rev_sol(n-1)
 
 rev_sol(n)
+print()
 sol(n)

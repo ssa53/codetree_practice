@@ -1,10 +1,16 @@
+OFFSET = 100
+MAX_R = 200
+
 n = int(input())
-segments = [tuple(map(int, input().split())) for _ in range(n)]
-arr  = [0]*(n+1)
+segments = [
+    map(int,input().split())
+    for i in range(n)
+]
+arr = [0] * (MAX_R+1)
 
 for x1,x2 in segments:
-    for i in range(x1,x2-1):
+    x1,x2 = x1+OFFSET,x2+OFFSET
+    for i in range(x1,x2):
         arr[i] += 1 
-        
 
 print(max(arr))

@@ -4,7 +4,7 @@ class Student:
 
 n = int(input())
 students = []
-for i in ragne(1,n+1):
+for i in range(1,n+1):
     height,weight = tuple(map(int,input().split()))
     students.append(Student(height,weight,i))
     
@@ -13,4 +13,4 @@ students.sort(key=lambda x:(-x.height,-x.weight,x.number))
 
 for student in students:
     print(student.height,student.weight,student.number) 
-    
+

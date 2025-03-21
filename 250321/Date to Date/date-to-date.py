@@ -6,6 +6,6 @@ def get_days(m,d):
     days += d
     return days 
 
-a,b,c,d=map(int,input())
+a,b,c,d=map(int,input().split())
 print(get_days(c,d)-get_days(a,b))
         

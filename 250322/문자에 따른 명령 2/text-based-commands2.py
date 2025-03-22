@@ -8,7 +8,7 @@ for i in dirs:
         dir_num = (dir_num + 1) % 4 
 
     elif i == 'L':
-        dir_num = (abs(dir_num - 1)) % 4
+        dir_num = (dir_num +3) % 4
 
     else:
         x = x + dx[dir_num]

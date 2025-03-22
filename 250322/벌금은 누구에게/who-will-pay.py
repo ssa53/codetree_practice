@@ -6,7 +6,7 @@ ans = []
 for i in student:
     arr[i] += 1 
     for j in range(len(arr)):
-        if arr[j] >= k:
+        if arr[j] >= K:
             ans.append(j)
             
 if len(ans) != 0 :

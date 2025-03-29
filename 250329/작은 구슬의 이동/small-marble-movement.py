@@ -1,5 +1,5 @@
 n, t = map(int, input().split())
-x,y d = input().split()
+x,y ,d = input().split()
 x,y = int(x), int(y)
 
 mapper={

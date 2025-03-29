@@ -1,5 +1,5 @@
 n,m = map(int, input().split())
-grid = [list(input().split()) for _ in range(R)]
+grid = [list(input().split()) for _ in range(m)]
 
 cnt = 0
 for i in range(1,n):

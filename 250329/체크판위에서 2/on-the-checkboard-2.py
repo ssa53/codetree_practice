@@ -1,4 +1,4 @@
-R, C = map(int, input().split())
+n,m = map(int, input().split())
 grid = [list(input().split()) for _ in range(R)]
 
 cnt = 0

@@ -10,7 +10,7 @@ mapper={
 }
 
 dxs,dys=[0,1,-1,0],[1,0,0,-1]
-r,c,move_dir = r-1,c-1,mapper[d]
+r,c,move_dir = x-1,y-1,mapper[d]
 
 def in_range(x,y):
     return 0<=x and x<n and 0<=y and y<n

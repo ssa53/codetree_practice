@@ -1,6 +1,6 @@
 n, t = map(int, input().split())
-r, c, d = input().split()
-r, c = int(r), int(c)
+x,y d = input().split()
+x,y = int(x), int(y)
 
 mapper={
     'R':0,

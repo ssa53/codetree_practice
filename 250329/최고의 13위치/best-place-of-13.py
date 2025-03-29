@@ -1,5 +1,5 @@
 n = int(input())
-grid = [list(map(int, input().split())) for _ in range(n)]
+arr = [list(map(int, input().split())) for _ in range(n)]
 
 mx_cnt = 0
 for i in range(n):

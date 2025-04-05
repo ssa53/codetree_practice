@@ -1,11 +1,10 @@
 n, k = map(int, input().split())
 arr = list(map(int, input().split()))
 ans = 0
-for i in range(n):
+for i in range(n-k+1):
     maxi = 0
-    for j in range(i,i+k if i+k <n else n):
+    for j in range(i,i+k if i+k<n else n):
         maxi += arr[j] 
-    maxi = max(ans,maxi) 
+    ans = max(ans,maxi)
 
-print(maxi)
-        
+print(ans)

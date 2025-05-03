@@ -15,6 +15,6 @@ int main() {
     if(a==b) cout << 1<<endl;
     else cout <<0<<endl;
     if(a!=b) cout << 1 ;
-    else cout << 1; 
+    else cout << 0; 
     return 0;
 }
